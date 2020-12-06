@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+    defer>
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="leodiv" >
+    <img class="leoimg" src="https://www.freepnglogos.com/uploads/lion-logo-png/lion-logo-hewan-vektor-png-david-baptiste-chirot-32.png" alt="car" >
+    <p class="leo">LIONEL</p>
+    </div>
+    <div id="home" class="textinheader" onclick="document.location='index.html'" onmouseover="colorbh(this)" onmouseout="colors(this)">Main</div>
+    <div id="new" class="textinheader" onclick="document.location='new.html'"onmouseover="colorbh(this)" onmouseout="colors(this)">News</div>
+    <div  id="cont" class="textinheader" onclick="document.location='#f'" onmouseover="colorbh(this)" onmouseout="colors(this)">Contact us</div>
+  </div>
+  <div class="rowbc">
+        <p id="colscomf">Comfort+</p>
+    <div class="row">
+      <div class="col-sm-6">
+        <p style="color: rgb(12,45,211,0.6)">TOYOTA CAMRY 70 LUX</p>
+        <p>Company: TOYOTA MOTOR CORPARATION</p>
+        <p>Assemled: Japan</p>
+        <p>Year: 2020</p>
+        <p>Cost: 25tg\min</p>
+        <p>Rent for a day: 15000tg</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:70%">Comfort</div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar" style="width:75%">Speed</div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar" style="width:80%">View</div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <img  id="comfimg" src="https://online.toyotaastana.kz/wp-content/uploads/2020/06/35-л-1.png">
+        <br>
+        <button id="bot" style="margin-left: 125px;" type="button" class="btn btn-outline-secondary btn-lg" onclick="document.location='login.html'">I want to leave a request</button>
+      </div>
+    </div>
+  </div>
+  <div class="rowbc">
+    <div class="row">
+      <div class="col-sm-6">
+        <p style="color: rgb(12,45,211,0.6)">BMW X6 M50d M Special</p>
+        <p>Company: BMW MOTOR CORPARATION</p>
+        <p>Assemled: Germany</p>
+        <p>Year: 2020</p>
+        <p>Cost: 35tg\min</p>
+        <p>Rent for a day: 25000tg</p>
+        <div class="progress">
+          <div class="progress-bar" style="width:80%">Comfort</div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar" style="width:85%">Speed</div>
+        </div>
+        <br>
+        <div class="progress">
+          <div class="progress-bar" style="width:80%">View</div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <img  id="comfimg"  src="https://cosystatic.bmwgroup.com/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6Gsd10tLhu1XzWVo7puMLWFmdkAj5DOPfLV%25Z8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gSZWNF1VgxNJ0%25lJ2oub5imC2yRCzXeTt%25ViPRKVZVYVndWh1DMztzp9eqVYDafagRjmztYRSRgM67aftxdxS3w1RSfWQlsn%25VxdSeZs3muzWQdjc0XN3aeZQ6KAnkXRjcZwBO5wrx6Kc%252g8D4WwBKupUPgFe%252B3iEXMIjup2XHNrzv63iprJkxFGwXHi4TnWn9%25rJHFl54pou4TJIsDNSL3FlTv0YGiyXIslGAt9jCrv0s9OfoNE4GA0ogSUlNF9OALUd6%25kIogOybQwjnvLUgChZnB5GybUEqcCB89ChbNmK4PPoEqhk7B%25iMLNmqn12ufDyk7m5VpttYCn178ziBwtE5V1Pa7V4fN8zVMR1KjSkPazDxVBDdnMRaYWz2HQ5DxRteapsZ8YWxfjRNdcPteWS6iUaKMfjedwHE2BDS6jQ%25JTZ2Ydw6ZuTlMptQ%25wc3lsqifZu%25KXsy8HSc3uBr0NCJdKX324AbMTQBrXpFOhslZ24riIgqgscpF4HviR30KiIFJGHxAABHvIT9JrrO2JGvloTWggpT9GsLlMiUilo90y95kbHsLoACoMMhJ0yLOEM8uqTMya6VNLB9uWCM5GavToU%25gXAWHR">
+        <br>
+        <button style="margin-left: 125px;" type="button" class="btn btn-outline-secondary btn-lg" onclick="document.location='login.html'">I want to leave a request</button>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+    
+  <footer id="f">
+    <div>
+      <div style="display: flex">
+        <p style="padding-right: 10px">Head office adress:</p>
+        <img style="margin-top: 12px; " src="https://cdn.onlinewebfonts.com/svg/img_107641.png" height="25" width="25">
+      </div>
+      <p>Pavlodar region</p>
+      <p>Ekibastuz c.</p>
+      <p>Auezov st. 89\5</p>
+    </div>
+    <div>
+      <div style="display: flex">
+        <p style="padding-right: 10px">Phone numbers:</p>
+        <img style="margin-top: 12px; " src="http://iconsetc.com/icons-watermarks/flat-rounded-square-white-on-black/aiga/aiga_telephone/aiga_telephone_flat-rounded-square-white-on-black_256x256.png" height="25" width="25">
+      </div>
+      <p></p>
+      <p>87(7182)569875</p>
+      <p>87(705)1234567</p>
+      <p>87(701)0010201</p>
+    </div>
+    <div>
+      <div style="display: flex">
+        <p style="padding-right: 10px">Follow us in Twitter</p>
+        <img style="margin-top: 12px;" src="https://sguru.org/wp-content/uploads/2018/02/twitter_PNG33.png" height="30" width="30">
+      </div>
+      <p>@Lionel.King</p>
+    </div>
+    <div>
+      <div style="display: flex">
+        <p style="padding-right: 10px">Follow us in Istagram</p>
+        <img style="margin-top: 12px; " src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-glyph-logo-icon-png-black-white.png" height="25" width="25">
+      </div>
+      <p>@snorlax.kz</p>
+    </div>
+    <div>
+      <div style="display: flex">
+        <p style="padding-right: 10px">Follow us in VKontakte</p>
+        <img style="margin-top: 12px;" src="https://cdn.icon-icons.com/icons2/2248/PNG/512/vk_icon_135042.png" height="25" width="25">
+      </div>
+      <p>id15658494</p>
+    </div>
+  </footer>
+</body>
+</html>
